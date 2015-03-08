@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#fafafa"
+            >
+
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#d4d4d4"
+            android:padding="0.5dp"
+            android:layout_weight="1"
+            >
+            <EditText
+              android:id="@+id/comment_txt"
+              android:layout_width="fill_parent"  
+              android:layout_height="fill_parent"
+              android:inputType="text"
+              android:textSize="17sp"
+              android:padding="4dp"
+              android:gravity="top"
+              android:textColor="@color/black"
+              android:background="#f4f4f4"
+              android:hint="不吐不快#">
+            </EditText>
+            
+             </LinearLayout>
+                
+           <ScrollView    
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#fafafa"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+            
+             <EditText
+              android:id="@+id/vCode"
+              android:layout_width="70dp"  
+              android:layout_height="37dp"
+              android:textSize="13sp"
+              android:layout_gravity="center_vertical"
+              android:inputType="number"
+              android:textColor="@color/black"
+              android:background="@drawable/bg_setting"
+              android:hint="验证码">
+            </EditText>
+            
+            <ImageView
+            android:id="@+id/ImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="#e8e8e8"
+            android:layout_height="35dp"/>
+            
+             <TextView
+                 android:id="@+id/flashCode"
+              android:layout_width="wrap_content"  
+              android:layout_height="fill_parent"
+              android:textSize="13sp"
+              android:layout_marginLeft="8dp"
+              android:textColor="#001efb"
+              android:gravity="center_vertical"
+              android:text="换一个">
+            </TextView>
+            
+              <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+              <Button
+              android:id="@+id/bt_submit"
+              android:layout_width="45dp"  
+              android:layout_height="45dp"
+              android:background="@drawable/bt_submit_comment"/>
+               </LinearLayout>
+            </LinearLayout>
+            
+</LinearLayout>
+        

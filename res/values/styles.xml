@@ -1,0 +1,112 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="PipiBaseTheme" parent="Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/bt_menu</item>
+        <item name="android:itemBackground">@color/white</item> 
+        <item name="android:actionButtonStyle">@style/barMenuStyle</item> 
+        <item name="android:windowBackground">@color/background_common</item>
+    </style>
+    
+  <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+  <item name="android:background">@color/bg_bar</item> 
+  <item name="android:titleTextStyle">@style/barTextStyle</item>
+  </style>
+  
+  <style name="barTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+  </style>
+  
+  <style name="barMenuStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:background">@drawable/ic_menu</item>
+  </style>
+  
+    <!-- Application theme. -->
+    <style name="PipiNoTitleTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="PipiMovieInfoTheme" parent="PipiBaseTheme">
+        <item name="android:homeAsUpIndicator">@drawable/bt_back</item>
+    </style>
+    
+<style name="ContentOverlay" parent="@android:style/Theme.Light">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowIsTranslucent">true</item> 
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="mhorprogress" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/horprogressdrawable</item>
+    </style>
+    
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:minHeight">20dip</item>
+     </style>
+     
+<style name="myDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="myProgressBar">
+        <item name="android:indeterminateDuration">2000</item>
+    </style>
+    
+    <style name="myprogress" >
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    
+    <style name="info_dialog" parent="@android:style/Theme.Dialog">
+  <item name="android:windowIsFloating">true</item> 
+  <item name="android:backgroundDimEnabled">false</item> 
+  <item name="android:windowNoTitle">true</item> 
+  <item name="android:windowIsTranslucent">false</item>
+  <item name="windowContentOverlay">@null</item> 
+  <item name="android:windowBackground">@android:color/transparent</item>  
+  <item name="android:background">@android:color/transparent</item>  
+  </style>
+  
+    <style name="main_radio_button">
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bt_dianying_radio</item>
+    </style>
+    <style name="main_radio_button2">
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/bt_dianying_radio</item>
+    </style>
+ 
+</resources>

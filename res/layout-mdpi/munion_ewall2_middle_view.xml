@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.taobao.munion.actionbar.ActionBar
+            android:id="@id/munion_actionbar"
+            style="@style/MunionActionBar" />
+        <!--
+        <android.support.v4.view.ViewPager
+            android:id="@+id/webview_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/munion_search_edit_height" >
+        </android.support.v4.view.ViewPager>
+        -->
+
+        <com.taobao.munion.ewall2.PullToRefreshWebView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/munion_actionbar"
+            android:layout_marginBottom="50dp"
+            android:background="#ffffff"
+            ptr:ptrMode="both" />
+
+        <com.taobao.munion.ewall2.BottomTabView
+            android:id="@+id/bottomBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/munion_bottom_bar_bg" />
+
+        <!--
+             include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/munion_search_suggest_edit" /
+        -->
+    </RelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

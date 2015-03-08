@@ -1,0 +1,81 @@
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <com.taobao.munion.actionbar.ActionBar
+            android:id="@id/munion_actionbar"
+            style="@style/MunionActionBar" />
+
+        <TextView
+            android:id="@+id/pattern_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/munion_actionbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/munion_pattern_top_text_margin_top"
+            android:textSize="@dimen/munion_pattern_top_text_size" />
+
+        <com.taobao.munion.pattern.LockPatternView
+            android:id="@+id/pattern_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pattern_top_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/munion_pattern_view_magin_top"
+            app:default_show_cell_src="@drawable/munion_pattern_inner"
+            app:default_touch_cell_src="@drawable/munion_pattern_inner"
+            app:indicator_code_lock_drag_direction_normal="@null"
+            app:indicator_code_lock_drag_direction_warn="@null"
+            app:indicator_code_lock_point_area_normal="@drawable/munion_pattern_correct"
+            app:indicator_code_lock_point_area_warn="@drawable/munion_pattern_error"
+            app:indicator_lock_point_area_default="@drawable/munion_pattern_default" />
+
+        <LinearLayout
+            android:id="@+id/pattern_bottom_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pattern_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/munion_pattern_button_margin_left"
+            android:layout_marginTop="@dimen/munion_pattern_button_margin_top"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/pattern_left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/forgen_icon"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/munion_forgot_password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/forgen_icon"
+                    android:gravity="top"
+                    android:text="@string/munion_pattern_forgot_pattern"
+                    android:textColor="@color/munion_pattern_title_color_gray"
+                    android:textSize="@dimen/munion_pattern_button_text_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/pattern_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/munion_pattern_button_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

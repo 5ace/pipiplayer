@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/main_background_color"
+>
+  <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" 
+            android:layout_gravity="center_horizontal"
+            >  
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+            <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@color/black"
+            android:text="@string/about_appinfo"
+            />
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+             android:background="@drawable/bg_setting"
+            >
+           <RelativeLayout
+               android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+            > 
+             <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/pipiplayerclient_name"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            />
+             <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:text="@string/pipiplayer_versionname"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+             
+            </RelativeLayout>
+             
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/set_main_item_line_color"
+            />
+             
+             <RelativeLayout
+               android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+            > 
+             <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/build1"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+             <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:text="@integer/pipiplayer_versioncode"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+             
+            </RelativeLayout>
+          
+      
+          </LinearLayout>
+          
+          <TextView
+              android:id="@+id/text2"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@color/black"
+            android:gravity="bottom|left"
+            android:text="@string/contact_us"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+             android:background="@drawable/bg_setting"
+            >
+           <RelativeLayout
+               android:id="@+id/layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+            > 
+             <TextView
+            android:id="@+id/TextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:text="@string/official_email1"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+             <TextView
+            android:id="@+id/TextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/official_email2"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+             
+            </RelativeLayout>
+             
+             <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/set_main_item_line_color"
+            />
+             
+             <RelativeLayout
+               android:id="@+id/layout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+            > 
+             <TextView
+            android:id="@+id/TextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:text="@string/official_qqgroup1"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+             <TextView
+            android:id="@+id/TextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:text="@string/official_qqgroup2"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+             
+            </RelativeLayout>
+          
+          </LinearLayout>
+           <TextView
+              android:id="@+id/text3"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@color/black"
+            android:gravity="bottom|left"
+            android:text="@string/about_pipi"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+             android:background="@drawable/bg_setting"
+            >
+           <RelativeLayout
+               android:id="@+id/layout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            > 
+             <TextView
+            android:id="@+id/TextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/about_pipidetial"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+             
+            </RelativeLayout>
+      
+          </LinearLayout>
+          
+          </LinearLayout>
+    </ScrollView>
+</LinearLayout>

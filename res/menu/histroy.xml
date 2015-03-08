@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_clear" 
+        android:title="@string/clear"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_edit" 
+        android:title="@string/btnEdit"
+        android:showAsAction="always|withText" />
+
+</menu>

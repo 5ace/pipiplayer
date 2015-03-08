@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/munion_search_edit_content"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:clickable="true"
+    >
+    <EditText
+        android:id="@+id/munion_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/munion_title_suggest_icon_edittext_background"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="37dp"
+        android:paddingRight="38dp"
+        android:textColor="#434343"
+        android:textSize="14sp"
+        android:textColorHint="#898989"
+        android:layout_centerVertical="true"
+        android:editable="false"
+        android:textCursorDrawable="@null" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/munion_title_suggest_icon_search" />
+
+    <ImageView
+        android:id="@+id/munion_suggest_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/munion_title_suggest_icon_delete"
+        android:visibility="gone" />
+
+</RelativeLayout>

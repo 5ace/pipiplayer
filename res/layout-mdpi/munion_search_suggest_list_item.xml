@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@drawable/munion_suggest_list_item_background_selector"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:layout_marginLeft="27dp"
+        android:id="@+id/munion_suggest_icon"
+        android:layout_width="17dp"
+        android:layout_height="17dp" 
+        />
+    
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/munion_suggest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:textColor="#434343" />
+
+</LinearLayout>

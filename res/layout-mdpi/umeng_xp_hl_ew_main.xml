@@ -1,0 +1,100 @@
+<com.umeng.newxp.view.widget.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_xp_ew_layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/umeng_xp_ew_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/umeng_xp_header_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/umeng_xp_ew_title_layout"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/umeng_xp_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/umeng_xp_header_frame" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/umeng_xp_preloading"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/umeng_xp_ew_title_layout"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="正在加载，请稍后."
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/umeng_xp_ew_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/umeng_xp_ew_title_layout"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/error_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/common_mask_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#ffffff"
+                android:shadowRadius="2"
+                android:text="@string/munion_webview_error_common_title"
+                android:textColor="@color/munion_error_title"
+                android:textSize="@dimen/munion_error_title_text_size" />
+
+            <TextView
+                android:id="@+id/common_mask_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/munion_error_subtitle_margin_top"
+                android:gravity="center"
+                android:shadowColor="#ffffff"
+                android:shadowRadius="2"
+                android:text="@string/munion_webview_error_common_subtitle"
+                android:textColor="@color/munion_error_subtitle"
+                android:textSize="@dimen/munion_error_subtitle_text_size" />
+
+            <Button
+                android:id="@+id/umeng_xp_ew_error_btn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/munion_error_btn_margin_top"
+                android:background="@drawable/umeng_xp_hl_webview_error_button_background_selector"
+                android:text="@string/munion_error_retry"
+                android:textColor="@drawable/umeng_xp_hl_webview_error_button_color_selector"
+                android:textSize="@dimen/munion_error_btn_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>

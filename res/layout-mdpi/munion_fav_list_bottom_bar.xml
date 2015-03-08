@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/label_detail_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/munion_bottom_banner_height"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/munion_bottom_bar_bg" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/munion_bottom_bar_line_color" />
+    <!-- android:layout_marginLeft="@dimen/munion_label_bottom_bar_select_margin_left" -->
+	
+	<ImageView
+	    android:layout_width="23dp"
+	    android:layout_height="23dp" 
+	    android:id="@+id/label_detail_bottom_banner_button_select_back"
+	    android:src="@drawable/munion_bottom_back_selector"
+	    android:layout_marginLeft="@dimen/munion_label_bottom_bar_select_margin_left"
+	    android:layout_centerVertical="true"
+	    />
+	
+    <RelativeLayout
+        android:id="@+id/label_detail_bottom_banner_button_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/munion_label_bottom_bar_select_height"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:paddingRight="5dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/munion_label_select_all_image"
+            android:layout_width="@dimen/munion_label_bottom_bar_icon_height"
+            android:layout_height="@dimen/munion_label_bottom_bar_icon_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/munion_select" />
+
+        <TextView
+            android:id="@+id/munion_select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/munion_label_select_all_image"
+            android:singleLine="true"
+            android:text="@string/munion_label_detail_select_all"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/munion_label_bottom_bar_sync_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/label_detail_bottom_banner_button_sync"
+        android:layout_width="@dimen/munion_label_bottom_bar_sync_width"
+        android:layout_height="@dimen/munion_label_bottom_bar_sync_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/munion_label_bottom_bar_sync_margin_right"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/munion_label_bottom_bar_icon_height"
+            android:layout_height="@dimen/munion_label_bottom_bar_icon_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/munion_sync_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/munion_label_detail_sync"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/munion_label_bottom_bar_sync_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/label_detail_bottom_banner_button_delete"
+        android:layout_width="@dimen/munion_label_bottom_bar_delete_width"
+        android:layout_height="@dimen/munion_label_bottom_bar_delete_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/munion_label_bottom_bar_delete_margin_right"
+        android:layout_toLeftOf="@id/label_detail_bottom_banner_button_sync"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/munion_label_bottom_bar_icon_width"
+            android:layout_height="@dimen/munion_label_bottom_bar_icon_height"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:src="@drawable/munion_delete_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/label_detail_bottom_banner_button_delete_start"
+        android:layout_width="@dimen/munion_label_bottom_bar_delete_start_width"
+        android:layout_height="@dimen/munion_label_bottom_bar_delete_start_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/munion_label_bottom_bar_sync_margin_right"
+        android:background="@color/munion_slide_delete_click_background"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="@dimen/munion_label_bottom_bar_icon_width"
+            android:layout_height="@dimen/munion_label_bottom_bar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/munion_delete_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/munion_label_detail_delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/munion_label_bottom_bar_sync_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/label_detail_bottom_banner_button_sync_start"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/munion_label_bottom_bar_sync_start_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/munion_label_bottom_bar_sync_margin_right"
+        android:background="@drawable/munion_bottom_sync_start_background_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/progress"
+            android:layout_width="@dimen/munion_label_bottom_bar_icon_width"
+            android:layout_height="@dimen/munion_label_bottom_bar_icon_height"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/munion_sync_whit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:text="@string/munion_label_detail_sync_start"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/munion_label_bottom_bar_sync_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.umeng.newxp.view.common.actionbar.ActionBar
+            android:id="@+id/umeng_actionbar"
+            style="@style/UmengActionbarDefault" />
+
+        <com.umeng.newxp.view.UMCityView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/umeng_cityview" />
+    </LinearLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

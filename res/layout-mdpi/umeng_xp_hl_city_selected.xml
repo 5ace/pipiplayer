@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#393D46" >
+
+    <com.umeng.newxp.view.widget.indexlist.SectionListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp" />
+
+    <com.umeng.newxp.view.widget.indexlist.SlideBar
+        android:id="@+id/slideBar"
+        android:layout_width="28dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+  <!--   <RelativeLayout
+        android:id="@+id/umeng_socialize_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#393D46"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+ -->
+ </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_gesture_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+                android:id="@+id/control_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:text="@string/control_light"
+                android:layout_marginTop="50dp"
+                android:textSize="17sp" />
+         <ImageView
+                android:id="@+id/control_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/control_light"
+                android:scaleType="fitXY"
+                 android:layout_centerVertical="true"/>
+        <ImageView
+                android:id="@+id/control_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:src="@drawable/control_sound"
+                android:layout_alignParentRight="true"/>
+        <ImageView
+                android:id="@+id/control_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/control_progress"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+         </RelativeLayout>

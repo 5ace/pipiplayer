@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 离线下载页面 中  gridview  item 布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:baselineAligned="false" 
+    android:padding="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_item_list_bg"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <!-- 左边 图片样式 及相关控制按钮布局 -->
+
+   <ImageView
+    android:id="@+id/moive_img"
+    android:layout_width="74dp"
+    android:layout_height="96dp"
+    android:layout_gravity="center_vertical"
+    android:src="@drawable/item_moive_list"
+    android:scaleType="fitXY"/>
+
+    <!-- 右边 图片样式 及相关控制按钮布局 -->
+
+    <RelativeLayout
+        android:id="@+id/gvitem_right"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:paddingLeft="6dp">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:orientation="vertical" >
+          <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="0dp" >
+            <TextView
+                android:id="@+id/gvitem_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="0dp" >
+            <ImageView
+                android:id="@+id/gvitem_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconpipi"
+                android:layout_centerVertical="true"/>
+            <TextView
+            android:id="@+id/text_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/gvitem_icon"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+             <TextView
+                android:id="@+id/gvitem_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                 android:layout_alignParentRight="true"
+                android:text="@string/task_waitting"/>
+             
+            </RelativeLayout>
+            
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="0dp" >
+             <TextView
+                android:id="@+id/gvitem_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/gvitem_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                 android:layout_alignParentRight="true"/>
+             </RelativeLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+  <LinearLayout
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent">
+            <CheckBox
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:clickable="true"
+            />
+            </LinearLayout>
+            
+</LinearLayout>

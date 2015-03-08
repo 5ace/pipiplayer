@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+<ListView 
+    android:id="@+id/listView_shouye"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="@color/transparent"
+    android:dividerHeight="5dp"
+    android:fadingEdge="none"
+    android:layout_weight="1"
+    android:cacheColorHint="@color/transparent"/>
+
+<LinearLayout
+    android:id="@id/deletelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp" 
+                android:padding="6dp"
+                android:visibility="gone"
+                android:background="#d6d6d6"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@id/deleteall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:background="#f5f5f5"
+                    android:text="@string/selectall" />
+            <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@id/deletesingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/gray2"
+                    android:text="@string/delete"
+                    />
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_sdsize"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/offline_sdsizetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/offlinedown_othericon"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/sdcardtotal" />
+
+                <TextView
+                    android:id="@id/offline_localsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/offlinedown_localicon"
+                    android:gravity="center"
+                     android:singleLine="true"
+                    android:text="@string/local" />
+
+                <TextView
+                    android:id="@id/offline_remainsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/offlinedown_remainicon"
+                    android:gravity="center"
+                     android:singleLine="true"
+                    android:text="@string/left" />
+        </LinearLayout>
+        
+</LinearLayout>

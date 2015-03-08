@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="munion_all_commodity">全部宝贝</string>
+    <string name="munion_my_folder">我的文件夹</string>
+    <string name="munion_label_detail_price_title">价格：</string>
+    <string name="munion_label_detail_change_label">调整标签</string>
+    <string name="munion_label_detail_past_due">宝贝已经过期</string>
+    <string name="munion_label_detail_not_past_due">宝贝未过期</string>
+    <string name="munion_label_detail_delete">删除</string>
+    <string name="munion_label_detail_sync">同步</string>
+    <string name="munion_label_detail_sync_start">开始同步</string>
+    <string name="munion_label_detail_delete_start">开始删除</string>
+    <string name="munion_label_detail_select_all">全选</string>
+    <string name="munion_label_detail_select_none">全不选</string>
+    <string name="munion_label_detail_sync_already">已同步</string>
+    <string name="munion_label_detail_sync_not">未同步</string>
+    <string name="munion_label_detail_sync_not_goods">未同步的宝贝</string>
+    <string name="munion_label_detail_undo">取消</string>
+    
+    <!-- pattern -->
+    <string name="munion_pattern_draw_pattern">请输入手势密码</string>
+    <string name="munion_pattern_release_finger">完成后松开手指</string>
+    <string name="munion_pattern_least_dots">至少链接4个点,请重试</string>
+    <string name="munion_pattern_recored">图案已记录</string>
+    <string name="munion_pattern_draw_pattern_confirm">再次输入手势密码确认</string>
+    <string name="munion_pattern_retry">重试</string>
+    <string name="munion_pattern_continue">继续</string>
+    <string name="munion_pattern_cancel">取消</string>
+    <string name="munion_pattern_confirm">确认</string>
+    <string name="munion_pattern_try_again">两次输入不一致,请再次输入</string>
+    <string name="munion_pattern_new_pattern">恭喜你,密码设置成功</string>
+    <string name="munion_pattern_wrong_pattern">密码错误,您还可以再输入$次</string>
+    <string name="munion_pattern_forgot_pattern">忘记密码</string>
+    <string name="munion_pattern_wrong_password_no_changce">密码错误超过最高次数!</string>
+    
+    <!-- my munion -->
+    <string name="munion_mymuion_logout">登录我的淘宝</string>
+    
+    <!-- error -->
+    <string name="munion_webview_error_common_title">加载失败</string>
+    <string name="munion_webview_error_common_subtitle">请检查您的手机是否联网，并重新刷新页面。</string>
+    <string name="munion_webview_error_common_refresh_button_text">刷新页面</string>
+    <string name="munion_label_list_no_login_title">您还未登录，\r\n请登陆后查看已同步的宝贝。</string>
+    <string name="munion_label_list_no_login_sub_title">点击右上角的登录按钮，登录您的淘宝账号。</string>
+    <string name="munion_label_list_no_not_sync_goods">没有未同步的宝贝</string>
+    <string name="munion_label_list_no_sync_goods">没有同步的宝贝</string>
+     <string name="munion_error_retry">重试</string>
+</resources>

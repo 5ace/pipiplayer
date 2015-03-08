@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LockPatternView">
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect" format="string" />
+        
+        <attr name="default_show_cell_src" format="reference" />
+        <attr name="default_touch_cell_src" format="reference" />
+        <attr name="indicator_lock_point_area_default" format="reference" />
+        <attr name="indicator_code_lock_point_area_normal" format="reference" />
+        <attr name="indicator_code_lock_point_area_warn" format="reference" />
+        <attr name="indicator_code_lock_drag_direction_normal" format="reference" />
+        <attr name="indicator_code_lock_drag_direction_warn" format="reference" />
+    </declare-styleable>
+
+</resources>

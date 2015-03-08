@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"     
+    android:orientation="vertical">
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <ImageView 
+    android:id="@+id/tag_img"
+    android:layout_width="24dp"
+    android:layout_height="30dp" 
+    android:layout_centerVertical="true"
+    android:src="@drawable/iconpipi"
+    android:layout_marginLeft="15dp"/>
+    <TextView 
+    android:id="@+id/tag_text"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" 
+    android:text="@string/dianying"
+    android:gravity="center"
+    android:textSize="13sp"
+    android:layout_toRightOf="@+id/tag_img"
+    android:drawableRight="@drawable/ic_bt_down"
+    android:textColor="@color/black"/>  
+    <TextView 
+    android:id="@+id/tag_order"
+    android:layout_width="80dp"
+    android:layout_height="fill_parent" 
+    android:text="@string/order_1"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:textSize="13sp"
+    android:textColor="@color/black"/> 
+    </RelativeLayout>
+    <cn.pipi.mobile.pipiplayer.view.MyGridView
+    android:id="@+id/grid_selection"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:horizontalSpacing="4dp"
+    android:verticalSpacing="4dp"
+    android:numColumns="4"
+    android:fadingEdge="none" 
+    android:visibility="gone"
+    android:cacheColorHint="@color/transparent"
+    android:background="@drawable/bg_selection_source"
+    />
+    <cn.pipi.mobile.pipiplayer.view.MyGridView
+    android:id="@+id/grid_num"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="5"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="10dp"
+    android:fadingEdge="none" 
+    android:verticalSpacing="10dp"
+    android:cacheColorHint="@color/transparent"
+    />
+</LinearLayout>
+</ScrollView>

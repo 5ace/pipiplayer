@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.umeng.newxp.view.widget.KeyboardListenRelativeLayout
+        android:id="@+id/munion_suggest_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/munion_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/munion_search_edit_height" >
+
+            <RelativeLayout
+                android:id="@+id/munion_title_left_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/munion_search_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/munion_title_right_button"
+                android:layout_toRightOf="@id/munion_title_left_button" >
+
+                <EditText
+                    android:id="@+id/munion_search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="37dp"
+                    android:paddingRight="38dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#898989"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/munion_title_suggest_icon_search" />
+
+                <ImageView
+                    android:id="@+id/munion_suggest_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/munion_title_suggest_icon_delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/munion_title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+                <ImageView 
+                    android:id="@+id/munion_right_switch"
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"/>
+				<Button 
+				    android:id="@+id/munion_cancle_search"
+				    android:layout_width="52dp"
+				    android:layout_height="match_parent"
+				    android:layout_marginRight="15dp"
+				    android:text="取消"
+				    android:textSize="14sp"
+				    android:textColor="#f7f7f7"
+				    android:visibility="gone"
+				    android:background="@drawable/munion_title_search_right_button_cancle_selector"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/munion_suggest_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/munion_title_content"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+    </com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>
+
+</RelativeLayout>

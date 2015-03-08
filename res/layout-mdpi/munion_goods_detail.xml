@@ -1,0 +1,66 @@
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <com.taobao.munion.actionbar.ActionBar
+            android:id="@id/munion_actionbar"
+            style="@style/MunionActionBar"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <com.taobao.munion.webview.MunionWebview
+            android:id="@+id/goods_main_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/munion_actionbar"
+            android:layout_marginBottom="50dp" />
+
+        <com.taobao.munion.ewall2.BottomTabView
+            android:id="@+id/bottomBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/munion_bottom_bar_bg" />
+
+        <!--
+        View
+            android:id="@+id/goods_bottom_boder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/munion_bottom_goods_webview_margin_bottom"
+            android:background="@color/munion_bottom_bar_line_color" />
+
+        <ImageButton
+            android:id="@+id/love_taobao_btn"
+            android:layout_width="@dimen/munion_bottom_goods_bottom_bar_icon_width"
+            android:layout_height="@dimen/munion_bottom_goods_bottom_bar_icon_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/munion_bottom_goods_detail_banner_left_margin"
+            android:layout_marginRight="@dimen/munion_bottom_goods_detail_banner_right_margin"
+            android:background="@drawable/munion_fav_button_background"
+            android:padding="@dimen/munion_bottom_goods_bottom_bar_icon_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/munion_goods_detail_fav_box_button_selector" />
+
+        <ImageButton
+            android:id="@+id/goods_fav_button"
+            android:layout_width="@dimen/munion_bottom_goods_bottom_bar_icon_width"
+            android:layout_height="@dimen/munion_bottom_goods_bottom_bar_icon_height"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/love_taobao_btn"
+            android:background="@drawable/munion_fav_button_background"
+            android:padding="@dimen/munion_bottom_goods_bottom_bar_icon_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/munion_goods_detail_like_not_button_selector" />
+        -->
+    </RelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

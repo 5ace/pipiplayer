@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_dianying_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#59000000">
+        <ImageView 
+                android:id="@+id/control_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/control_dianying"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+</RelativeLayout>

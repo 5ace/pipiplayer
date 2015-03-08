@@ -1,0 +1,92 @@
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.umeng.newxp.view.widget.KeyboardListenRelativeLayout
+        android:id="@+id/umeng_xp_ew_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#999999"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/umeng_xp_ew_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp" >
+
+                <EditText
+                    android:id="@+id/umeng_xp_ew_search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/umeng_xp_hl_search_edit_background"
+                    android:hint=" 请输入搜索关键字"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#898989"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/umeng_xp_ew_search_text_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/umeng_xp_hl_search_cancle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/umeng_xp_ew_search_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@drawable/umeng_xp_hl_search_cancle_text_color_selector"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/umeng_xp_ew_sub_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/umeng_xp_ew_title_layout"
+            android:background="@drawable/umeng_xp_hl_search_tabs_background" >
+
+            <TextView
+                android:id="@+id/umeng_xp_ew_search_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dip"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/umeng_xp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/umeng_xp_ew_sub_title_layout"
+            android:background="#ffffffff" >
+        </FrameLayout>
+    </com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_xp_rootId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <com.umeng.newxp.view.common.actionbar.ActionBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/umeng_xp_cm_title_bar"
+        style="@style/UmengActionbarDefault" />
+
+    <WebView
+        android:id="@+id/umeng_xp_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/umeng_xp_cm_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/umeng_xp_webview_contorller_layout"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="4dp"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/umeng_xp_browser_cancel"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/umeng_xp_cm_browser_close_button" />
+
+        <ImageButton
+            android:id="@+id/umeng_xp_browser_back"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/umeng_xp_browser_cancel"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/umeng_xp_cm_browser_back_button" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/umeng_xp_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progressDrawable="@drawable/umeng_xp_cm_webview_progressbar_drawable" />
+
+</RelativeLayout>

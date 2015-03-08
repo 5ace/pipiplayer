@@ -1,0 +1,96 @@
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.umeng.newxp.view.widget.KeyboardListenRelativeLayout
+        android:id="@+id/umeng_xp_ew_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#999999"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/umeng_xp_ew_title_layout"
+            layout="@layout/munion_ew_main_title" />
+
+        <com.umeng.newxp.view.handler.ewall.TabPageIndicator
+            android:id="@+id/umeng_xp_ew_pageIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/umeng_xp_ew_title_layout"
+            android:background="#e7e7e7"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/umeng_xp_ew_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/umeng_xp_ew_pageIndicator" >
+        </android.support.v4.view.ViewPager>
+
+        <com.umeng.newxp.view.handler.ewall.CurtainView
+            android:id="@+id/umeng_xp_ew_curtain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/umeng_xp_ew_title_layout"
+            android:background="#66333333"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/umeng_xp_ew_search_result_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/umeng_xp_ew_title_layout"
+            android:background="#e7e7e7"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/umeng_xp_ew_search_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#e7e7e7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="搜索结果:"
+                    android:textColor="@color/munion_indicator_text_color" />
+
+                <TextView
+                    android:id="@+id/umeng_xp_ew_search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/munion_indicator_text_color"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/umeng_xp_ew_search_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/umeng_xp_hl_ew_title_delete" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/umeng_xp_ew_search_result_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#e7e7e7" >
+            </FrameLayout>
+        </LinearLayout>
+    </com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

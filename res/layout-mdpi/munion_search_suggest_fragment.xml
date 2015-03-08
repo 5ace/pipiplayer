@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <com.umeng.newxp.view.widget.KeyboardListenRelativeLayout
+        android:id="@+id/munion_suggest_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/munion_title_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/munion_search_edit_height"
+            android:background="@drawable/munion_ew2_title_background" >
+
+            <RelativeLayout
+                android:id="@+id/munion_search_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/munion_cancle_search"
+                android:layout_toRightOf="@id/munion_title_left_button" >
+
+                <EditText
+                    android:id="@+id/munion_search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/munion_title_suggest_icon_edittext_background"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="37dp"
+                    android:paddingRight="38dp"
+                    android:textColor="#434343"
+                    android:textColorHint="#898989"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/munion_title_suggest_icon_search" />
+
+                <ImageView
+                    android:id="@+id/munion_suggest_delete"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/munion_title_suggest_icon_delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/munion_cancle_search"
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/munion_title_search_right_button_cancle_selector"
+                android:text="取消"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/munion_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/munion_title_content" >
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/munion_suggest_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/munion_title_content"
+            android:background="@android:color/white"
+            android:dividerHeight="1dp"
+            android:divider="#e7ecf0"
+            android:visibility="gone" />
+    </com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

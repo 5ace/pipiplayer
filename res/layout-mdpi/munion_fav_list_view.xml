@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/munion_bottom_bar_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/fav_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none" />
+
+            <TextView
+                android:id="@+id/fav_footer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/munion_label_list_footer_view_height"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="努力加载中，请稍等一下哦，亲～"
+                android:textColor="#333333"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/munion_bottom_banner_height"
+            layout="@layout/munion_fav_list_bottom_bar" />
+    </LinearLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>

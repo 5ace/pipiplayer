@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="munion_activity_horizontal_margin">16dp</dimen>
+    <dimen name="munion_activity_vertical_margin">16dp</dimen>
+
+    <!-- common title bar -->
+    <dimen name="munion_actionbar_height">48dip</dimen>
+    <dimen name="munion_actionbar_item_height">49dip</dimen>
+    <dimen name="munion_actionbar_item_width">49dip</dimen>
+    <dimen name="munion_actionbar_button_item_width">54dip</dimen>
+    <dimen name="munion_actionbar_progress_width">35dip</dimen>
+    <dimen name="munion_actionbar_more_padding">25dip</dimen>
+    <dimen name="munion_actionbar_more_item_height">56dip</dimen>
+    <dimen name="munion_actionbar_more_textsize">16sp</dimen>
+    <dimen name="munion_actionbar_more_item_width">140dip</dimen>
+
+    <!-- goods detail dimens -->
+    <dimen name="munion_bottom_banner_height">50dp</dimen>
+    <dimen name="munion_bottom_goods_detail_banner_height">60dp</dimen>
+    <dimen name="munion_bottom_goods_detail_banner_left_margin">10dp</dimen>
+    <dimen name="munion_bottom_goods_detail_banner_bottom_margin">0dp</dimen>
+    <dimen name="munion_bottom_goods_detail_banner_right_margin">10dp</dimen>
+    <dimen name="munion_bottom_goods_bottom_bar_icon_height">63dp</dimen>
+    <dimen name="munion_bottom_goods_bottom_bar_icon_width">63dp</dimen>
+    <dimen name="munion_bottom_goods_webview_margin_bottom">50dp</dimen>
+    <dimen name="munion_bottom_goods_bottom_bar_icon_padding">1.3dp</dimen>
+
+    <!-- munion_label detail dimens -->
+    <dimen name="munion_label_list_image_height">100dp</dimen>
+    <dimen name="munion_label_list_image_width">100dp</dimen>
+    <dimen name="munion_label_list_image_margin_top">10dp</dimen>
+    <dimen name="munion_label_list_item_padding">10dp</dimen>
+    <dimen name="munion_label_list_item_padding_left">10dp</dimen>
+    <dimen name="munion_label_list_item_padding_bottom">10dp</dimen>
+    <dimen name="munion_label_list_item_right_content_padding_top">10dp</dimen>
+    <dimen name="munion_label_list_item_title_padding_top">6dp</dimen>
+    <dimen name="munion_label_list_item_title_padding_right">10dp</dimen>
+    <dimen name="munion_label_list_item_text_size_title">16sp</dimen>
+    <dimen name="munion_label_list_item_text_size_price">16sp</dimen>
+    <dimen name="munion_label_list_item_text_size_button">14sp</dimen>
+    <dimen name="munion_label_list_item_text_size_past_due">14sp</dimen>
+    <dimen name="munion_label_switch_button_text_size">14dp</dimen>
+    <dimen name="munion_label_switch_button_margin_left">15dp</dimen>
+    <dimen name="munion_label_switch_button_margin_right">15dp</dimen>
+    <dimen name="munion_label_switch_button_margin_top">10dp</dimen>
+    <dimen name="munion_label_switch_button_margin_bottom">10dp</dimen>
+    <dimen name="munion_label_radio_button_pading_left">22dp</dimen>
+    <dimen name="munion_label_radio_button_pading_right">22dp</dimen>
+    <dimen name="munion_label_radio_button_pading_top">5dp</dimen>
+    <dimen name="munion_label_radio_button_pading_bottom">5dp</dimen>
+    <dimen name="munion_label_radio_button_margin_top">10dp</dimen>
+    <dimen name="munion_label_radio_button_margin_bottom">10dp</dimen>
+    <dimen name="munion_label_subtitle_height">30dp</dimen>
+    <dimen name="munion_label_subtitle_text_size">14sp</dimen>
+    <dimen name="munion_label_radio_button_width">90dp</dimen>
+    <dimen name="munion_label_radio_button_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_delete_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_delete_width">45dp</dimen>
+    <dimen name="munion_label_bottom_bar_delete_margin_right">20dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_width">60dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_padding_left">5dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_padding_right">5dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_margin_right">10dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_text_size">14sp</dimen>
+    <dimen name="munion_label_bottom_bar_icon_height">16sp</dimen>
+    <dimen name="munion_label_bottom_bar_icon_width">16sp</dimen>
+    <dimen name="munion_label_slide_delete_text_size">12sp</dimen>
+    <dimen name="munion_label_slide_delete_margin_top">5dp</dimen>
+    <dimen name="munion_label_list_height">100dp</dimen>
+    <dimen name="munion_label_list_undo_height">100dp</dimen>
+    <dimen name="munion_label_list_divider_height">10dp</dimen>
+    <dimen name="munion_label_bottom_bar_delete_start_width">60dp</dimen>
+    <dimen name="munion_label_bottom_bar_delete_start_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_select_margin_left">25dp</dimen>
+    <dimen name="munion_label_bottom_bar_select_width">70dp</dimen>
+    <dimen name="munion_label_bottom_bar_select_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_start_width">86dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_start_height">30dp</dimen>
+    <dimen name="munion_label_bottom_bar_sync_start_margin_right">30dp</dimen>
+    <dimen name="munion_label_list_sync_list_no_login_error_title_height">24sp</dimen>
+    <dimen name="munion_label_list_sync_list_no_login_error_title_text_size">17sp</dimen>
+    <dimen name="munion_label_list_sync_list_no_login_error_sub_title_text_size">10sp</dimen>
+    <dimen name="munion_label_list_footer_view_height">48dp</dimen>
+    <dimen name="munion_label_error_margin_top">-100dp</dimen>
+    <dimen name="munion_label_error_margin_bottom">50dp</dimen>
+    <dimen name="munion_label_botton_select_all_margin_right">20dp</dimen>
+
+    <!-- pattern dimens -->
+    <dimen name="munion_pattern_top_text_size">14sp</dimen>
+    <dimen name="munion_pattern_top_text_margin_top">22dp</dimen>
+    <dimen name="munion_pattern_view_magin_top">22dp</dimen>
+    <dimen name="munion_pattern_button_text_size">14sp</dimen>
+    <dimen name="munion_pattern_button_margin_top">16dp</dimen>
+    <dimen name="munion_pattern_button_margin_left">40dp</dimen>
+    
+    <!-- error -->
+    <dimen name="munion_error_title_text_size">19sp</dimen>
+    <dimen name="munion_error_subtitle_text_size">12sp</dimen>
+    <dimen name="munion_error_btn_text_size">15sp</dimen>
+    <dimen name="munion_error_subtitle_margin_top">10dp</dimen>
+    <dimen name="munion_error_btn_margin_top">25dp</dimen>
+    <dimen name="munion_error_btn_height">30dp</dimen>
+    <dimen name="munion_error_btn_width">70dp</dimen>
+	<dimen name="munion_error_label_list_margin_top">100dp</dimen>
+    
+	<dimen name="munion_default_image_size">100dp</dimen>
+	
+	<!-- ewall2 search edit -->
+	<dimen name="munion_search_edit_height">50dp</dimen>
+	<dimen name="munion_mymunion_user_icon_margin_top_has_jifenbao">15dp</dimen>
+	<dimen name="munion_mymunion_user_icon_margin_top_without_jifenbao">25dp</dimen>
+	<dimen name="munion_mymunion_user_name_margin_botton_has_jifenbao">50dp</dimen>
+	<dimen name="munion_mymunion_user_name_margin_botton_without_jifenbao">35dp</dimen>
+</resources>

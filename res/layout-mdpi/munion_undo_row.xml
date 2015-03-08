@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/munion_label_list_undo_height"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/undo_row_texttv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/munion_label_list_height"
+            android:background="@drawable/munion_labelist_delete_button_selector"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/munion_slide_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/munion_delete_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/munion_slide_delete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/munion_label_slide_delete_margin_top"
+            android:text="@string/munion_label_detail_delete"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/munion_label_slide_delete_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/undo_row_undobutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/munion_label_list_height"
+            android:background="@drawable/munion_labelist_undo_button_selector"
+            android:padding="10dp"
+            android:paddingRight="8dp" />
+
+        <ImageView
+            android:id="@+id/munion_slide_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/munion_undo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/munion_slide_undo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/munion_label_slide_delete_margin_top"
+            android:text="@string/munion_label_detail_undo"
+            android:textColor="@color/munion_slide_undo_text_color"
+            android:textSize="@dimen/munion_label_slide_delete_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

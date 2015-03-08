@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/umeng_xp_cm_title_bg_default" >
+
+    <RelativeLayout
+        android:id="@+id/umeng_xp_ew_layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="精彩推荐"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/umeng_xp_ew_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@null"
+        android:src="@drawable/umeng_xp_cm_title_back" />
+
+</RelativeLayout>

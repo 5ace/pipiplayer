@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sources">
+        <item>默认</item>
+        <item>标清</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>优酷</item>
+        <item>乐视</item>
+        <item>爱奇艺</item>
+        <item>腾讯</item>
+        <item>土豆</item>
+        <item>搜狐</item>
+        <item>网易</item>
+        <item>新浪</item>
+        <item>酷6</item>
+        <item>迅雷</item>
+        <item>激动网</item>
+        <item>华数</item>
+        <item>PPS</item>
+        <item>PPTV</item>
+        <item>风行</item>
+        <item>CNTV</item>
+        <item>电影网</item>
+    </string-array>
+    
+    <string-array name="iconSource">
+        <item>iconpipi</item>
+        <item>iconpipi</item>
+        <item>iconpipi</item>
+        <item>iconpipi</item>
+        <item>iconyouku</item>
+        <item>iconleshi</item>
+        <item>iconqiy</item>
+        <item>icontengxun</item>
+        <item>icontudou</item>
+        <item>iconsouhu</item>
+        <item>iconwangyi</item>
+        <item>iconxinlang</item>
+        <item>iconku6</item>
+        <item>iconxunlei</item>
+        <item>iconjidong</item>
+        <item>iconhuashu</item>
+        <item>iconpps</item>
+        <item>iconpptv</item>
+        <item>iconfengxing</item>
+        <item>iconcntv</item>
+        <item>iconm1905</item>
+    </string-array>
+    
+</resources>

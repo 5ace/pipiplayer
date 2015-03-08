@@ -1,0 +1,27 @@
+<com.taobao.munion.common.fragment.FragmentViewBase xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <com.taobao.munion.ewall2.ObservableWebView
+            android:id="@+id/munion_main_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/munion_actionbar"
+            android:layout_marginBottom="50dp" />
+
+        <com.taobao.munion.ewall2.BottomTabView
+            android:id="@+id/bottomBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/munion_bottom_bar_bg" />
+
+    </RelativeLayout>
+
+</com.taobao.munion.common.fragment.FragmentViewBase>
